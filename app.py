@@ -1,5 +1,15 @@
 import streamlit as st
 
+# Hide Streamlit style
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.set_page_config(page_title="My Private App Store", page_icon="📱", layout="centered")
 
 st.title("📱 My Private App Store")
